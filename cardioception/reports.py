@@ -53,8 +53,8 @@ def group_level_preprocessing(
     metacognitive_indices
         Whether to extract the metacognitive indices. Defaults to `True`.
 
-    Return
-    ------
+    Returns
+    -------
 
     See Also
     --------
