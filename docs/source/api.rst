@@ -102,7 +102,7 @@ Extracting the relevant parameters from long result data frame across group / re
 
 .. currentmodule:: cardioception.stats
 
-.. _reports:
+.. _stats:
 
 .. autosummary::
    :toctree: generated/stats
