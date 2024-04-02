@@ -1,0 +1,6 @@
+﻿cardioception.stats.behaviours
+==============================
+
+.. currentmodule:: cardioception.stats
+
+.. autofunction:: behaviours

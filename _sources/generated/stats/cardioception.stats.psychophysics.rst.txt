@@ -1,0 +1,6 @@
+﻿cardioception.stats.psychophysics
+=================================
+
+.. currentmodule:: cardioception.stats
+
+.. autofunction:: psychophysics

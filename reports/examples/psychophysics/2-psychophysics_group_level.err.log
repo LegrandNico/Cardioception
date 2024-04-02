@@ -1,0 +1,155 @@
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.9.19/x64/lib/python3.9/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+  File "/opt/hostedtoolcache/Python/3.9.19/x64/lib/python3.9/site-packages/nbclient/client.py", line 1314, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/opt/hostedtoolcache/Python/3.9.19/x64/lib/python3.9/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+  File "/opt/hostedtoolcache/Python/3.9.19/x64/lib/python3.9/asyncio/base_events.py", line 647, in run_until_complete
+    return future.result()
+  File "/opt/hostedtoolcache/Python/3.9.19/x64/lib/python3.9/site-packages/nbclient/client.py", line 709, in async_execute
+    await self.async_execute_cell(
+  File "/opt/hostedtoolcache/Python/3.9.19/x64/lib/python3.9/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/opt/hostedtoolcache/Python/3.9.19/x64/lib/python3.9/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+with group_psychophysics:
+    idata = pm.sample(chains=4, cores=4)
+------------------
+
+----- stderr -----
+Auto-assigning NUTS sampler...
+----- stderr -----
+Initializing NUTS using jitter+adapt_diag...
+----- stderr -----
+Multiprocess sampling (4 chains in 4 jobs)
+----- stderr -----
+NUTS: [mu_alpha, sigma_alpha, mu_beta, sigma_beta, alpha, beta]
+----- stderr -----
+Sampling 4 chains for 1_000 tune and 1_000 draw iterations (4_000 + 4_000 draws total) took 147 seconds.
+------------------
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mAttributeError[0m                            Traceback (most recent call last)
+File [0;32m/opt/hostedtoolcache/Python/3.9.19/x64/lib/python3.9/site-packages/arviz/data/base.py:342[0m, in [0;36mmake_attrs[0;34m(attrs, library)[0m
+[1;32m    341[0m [38;5;28;01mtry[39;00m:
+[0;32m--> 342[0m     version [38;5;241m=[39m [43mimportlib[49m[38;5;241;43m.[39;49m[43mmetadata[49m[38;5;241m.[39mversion(library_name)
+[1;32m    343[0m     default_attrs[[38;5;124m"[39m[38;5;124minference_library_version[39m[38;5;124m"[39m] [38;5;241m=[39m version
+
+[0;31mAttributeError[0m: module 'importlib' has no attribute 'metadata'
+
+During handling of the above exception, another exception occurred:
+
+[0;31mAttributeError[0m                            Traceback (most recent call last)
+Cell [0;32mIn[9], line 2[0m
+[1;32m      1[0m [38;5;28;01mwith[39;00m group_psychophysics:
+[0;32m----> 2[0m     idata [38;5;241m=[39m [43mpm[49m[38;5;241;43m.[39;49m[43msample[49m[43m([49m[43mchains[49m[38;5;241;43m=[39;49m[38;5;241;43m4[39;49m[43m,[49m[43m [49m[43mcores[49m[38;5;241;43m=[39;49m[38;5;241;43m4[39;49m[43m)[49m
+
+File [0;32m/opt/hostedtoolcache/Python/3.9.19/x64/lib/python3.9/site-packages/pymc/sampling/mcmc.py:826[0m, in [0;36msample[0;34m(draws, tune, chains, cores, random_seed, progressbar, step, var_names, nuts_sampler, initvals, init, jitter_max_retries, n_init, trace, discard_tuned_samples, compute_convergence_checks, keep_warning_stat, return_inferencedata, idata_kwargs, nuts_sampler_kwargs, callback, mp_ctx, model, **kwargs)[0m
+[1;32m    822[0m t_sampling [38;5;241m=[39m time[38;5;241m.[39mtime() [38;5;241m-[39m t_start
+[1;32m    824[0m [38;5;66;03m# Packaging, validating and returning the result was extracted[39;00m
+[1;32m    825[0m [38;5;66;03m# into a function to make it easier to test and refactor.[39;00m
+[0;32m--> 826[0m [38;5;28;01mreturn[39;00m [43m_sample_return[49m[43m([49m
+[1;32m    827[0m [43m    [49m[43mrun[49m[38;5;241;43m=[39;49m[43mrun[49m[43m,[49m
+[1;32m    828[0m [43m    [49m[43mtraces[49m[38;5;241;43m=[39;49m[43mtraces[49m[43m,[49m
+[1;32m    829[0m [43m    [49m[43mtune[49m[38;5;241;43m=[39;49m[43mtune[49m[43m,[49m
+[1;32m    830[0m [43m    [49m[43mt_sampling[49m[38;5;241;43m=[39;49m[43mt_sampling[49m[43m,[49m
+[1;32m    831[0m [43m    [49m[43mdiscard_tuned_samples[49m[38;5;241;43m=[39;49m[43mdiscard_tuned_samples[49m[43m,[49m
+[1;32m    832[0m [43m    [49m[43mcompute_convergence_checks[49m[38;5;241;43m=[39;49m[43mcompute_convergence_checks[49m[43m,[49m
+[1;32m    833[0m [43m    [49m[43mreturn_inferencedata[49m[38;5;241;43m=[39;49m[43mreturn_inferencedata[49m[43m,[49m
+[1;32m    834[0m [43m    [49m[43mkeep_warning_stat[49m[38;5;241;43m=[39;49m[43mkeep_warning_stat[49m[43m,[49m
+[1;32m    835[0m [43m    [49m[43midata_kwargs[49m[38;5;241;43m=[39;49m[43midata_kwargs[49m[43m [49m[38;5;129;43;01mor[39;49;00m[43m [49m[43m{[49m[43m}[49m[43m,[49m
+[1;32m    836[0m [43m    [49m[43mmodel[49m[38;5;241;43m=[39;49m[43mmodel[49m[43m,[49m
+[1;32m    837[0m [43m[49m[43m)[49m
+
+File [0;32m/opt/hostedtoolcache/Python/3.9.19/x64/lib/python3.9/site-packages/pymc/sampling/mcmc.py:894[0m, in [0;36m_sample_return[0;34m(run, traces, tune, t_sampling, discard_tuned_samples, compute_convergence_checks, return_inferencedata, keep_warning_stat, idata_kwargs, model)[0m
+[1;32m    892[0m ikwargs: [38;5;28mdict[39m[[38;5;28mstr[39m, Any] [38;5;241m=[39m [38;5;28mdict[39m(model[38;5;241m=[39mmodel, save_warmup[38;5;241m=[39m[38;5;129;01mnot[39;00m discard_tuned_samples)
+[1;32m    893[0m ikwargs[38;5;241m.[39mupdate(idata_kwargs)
+[0;32m--> 894[0m idata [38;5;241m=[39m [43mpm[49m[38;5;241;43m.[39;49m[43mto_inference_data[49m[43m([49m[43mmtrace[49m[43m,[49m[43m [49m[38;5;241;43m*[39;49m[38;5;241;43m*[39;49m[43mikwargs[49m[43m)[49m
+[1;32m    896[0m [38;5;28;01mif[39;00m compute_convergence_checks:
+[1;32m    897[0m     warns [38;5;241m=[39m run_convergence_checks(idata, model)
+
+File [0;32m/opt/hostedtoolcache/Python/3.9.19/x64/lib/python3.9/site-packages/pymc/backends/arviz.py:525[0m, in [0;36mto_inference_data[0;34m(trace, prior, posterior_predictive, log_likelihood, log_prior, coords, dims, sample_dims, model, save_warmup, include_transformed)[0m
+[1;32m    522[0m [38;5;28;01mif[39;00m [38;5;28misinstance[39m(trace, InferenceData):
+[1;32m    523[0m     [38;5;28;01mreturn[39;00m trace
+[0;32m--> 525[0m [38;5;28;01mreturn[39;00m [43mInferenceDataConverter[49m[43m([49m
+[1;32m    526[0m [43m    [49m[43mtrace[49m[38;5;241;43m=[39;49m[43mtrace[49m[43m,[49m
+[1;32m    527[0m [43m    [49m[43mprior[49m[38;5;241;43m=[39;49m[43mprior[49m[43m,[49m
+[1;32m    528[0m [43m    [49m[43mposterior_predictive[49m[38;5;241;43m=[39;49m[43mposterior_predictive[49m[43m,[49m
+[1;32m    529[0m [43m    [49m[43mlog_likelihood[49m[38;5;241;43m=[39;49m[43mlog_likelihood[49m[43m,[49m
+[1;32m    530[0m [43m    [49m[43mlog_prior[49m[38;5;241;43m=[39;49m[43mlog_prior[49m[43m,[49m
+[1;32m    531[0m [43m    [49m[43mcoords[49m[38;5;241;43m=[39;49m[43mcoords[49m[43m,[49m
+[1;32m    532[0m [43m    [49m[43mdims[49m[38;5;241;43m=[39;49m[43mdims[49m[43m,[49m
+[1;32m    533[0m [43m    [49m[43msample_dims[49m[38;5;241;43m=[39;49m[43msample_dims[49m[43m,[49m
+[1;32m    534[0m [43m    [49m[43mmodel[49m[38;5;241;43m=[39;49m[43mmodel[49m[43m,[49m
+[1;32m    535[0m [43m    [49m[43msave_warmup[49m[38;5;241;43m=[39;49m[43msave_warmup[49m[43m,[49m
+[1;32m    536[0m [43m    [49m[43minclude_transformed[49m[38;5;241;43m=[39;49m[43minclude_transformed[49m[43m,[49m
+[1;32m    537[0m [43m[49m[43m)[49m[38;5;241;43m.[39;49m[43mto_inference_data[49m[43m([49m[43m)[49m
+
+File [0;32m/opt/hostedtoolcache/Python/3.9.19/x64/lib/python3.9/site-packages/pymc/backends/arviz.py:429[0m, in [0;36mInferenceDataConverter.to_inference_data[0;34m(self)[0m
+[1;32m    421[0m [38;5;28;01mdef[39;00m [38;5;21mto_inference_data[39m([38;5;28mself[39m):
+[1;32m    422[0m [38;5;250m    [39m[38;5;124;03m"""Convert all available data to an InferenceData object.[39;00m
+[1;32m    423[0m 
+[1;32m    424[0m [38;5;124;03m    Note that if groups can not be created (e.g., there is no `trace`, so[39;00m
+[1;32m    425[0m [38;5;124;03m    the `posterior` and `sample_stats` can not be extracted), then the InferenceData[39;00m
+[1;32m    426[0m [38;5;124;03m    will not have those groups.[39;00m
+[1;32m    427[0m [38;5;124;03m    """[39;00m
+[1;32m    428[0m     id_dict [38;5;241m=[39m {
+[0;32m--> 429[0m         [38;5;124m"[39m[38;5;124mposterior[39m[38;5;124m"[39m: [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43mposterior_to_xarray[49m[43m([49m[43m)[49m,
+[1;32m    430[0m         [38;5;124m"[39m[38;5;124msample_stats[39m[38;5;124m"[39m: [38;5;28mself[39m[38;5;241m.[39msample_stats_to_xarray(),
+[1;32m    431[0m         [38;5;124m"[39m[38;5;124mposterior_predictive[39m[38;5;124m"[39m: [38;5;28mself[39m[38;5;241m.[39mposterior_predictive_to_xarray(),
+[1;32m    432[0m         [38;5;124m"[39m[38;5;124mpredictions[39m[38;5;124m"[39m: [38;5;28mself[39m[38;5;241m.[39mpredictions_to_xarray(),
+[1;32m    433[0m         [38;5;241m*[39m[38;5;241m*[39m[38;5;28mself[39m[38;5;241m.[39mpriors_to_xarray(),
+[1;32m    434[0m         [38;5;124m"[39m[38;5;124mobserved_data[39m[38;5;124m"[39m: [38;5;28mself[39m[38;5;241m.[39mobserved_data_to_xarray(),
+[1;32m    435[0m     }
+[1;32m    436[0m     [38;5;28;01mif[39;00m [38;5;28mself[39m[38;5;241m.[39mpredictions:
+[1;32m    437[0m         id_dict[[38;5;124m"[39m[38;5;124mpredictions_constant_data[39m[38;5;124m"[39m] [38;5;241m=[39m [38;5;28mself[39m[38;5;241m.[39mconstant_data_to_xarray()
+
+File [0;32m/opt/hostedtoolcache/Python/3.9.19/x64/lib/python3.9/site-packages/arviz/data/base.py:65[0m, in [0;36mrequires.__call__.<locals>.wrapped[0;34m(cls)[0m
+[1;32m     63[0m     [38;5;28;01mif[39;00m [38;5;28mall[39m(([38;5;28mgetattr[39m([38;5;28mcls[39m, prop_i) [38;5;129;01mis[39;00m [38;5;28;01mNone[39;00m [38;5;28;01mfor[39;00m prop_i [38;5;129;01min[39;00m prop)):
+[1;32m     64[0m         [38;5;28;01mreturn[39;00m [38;5;28;01mNone[39;00m
+[0;32m---> 65[0m [38;5;28;01mreturn[39;00m [43mfunc[49m[43m([49m[38;5;28;43mcls[39;49m[43m)[49m
+
+File [0;32m/opt/hostedtoolcache/Python/3.9.19/x64/lib/python3.9/site-packages/pymc/backends/arviz.py:279[0m, in [0;36mInferenceDataConverter.posterior_to_xarray[0;34m(self)[0m
+[1;32m    274[0m     [38;5;28;01mif[39;00m [38;5;28mself[39m[38;5;241m.[39mposterior_trace:
+[1;32m    275[0m         data[var_name] [38;5;241m=[39m np[38;5;241m.[39marray(
+[1;32m    276[0m             [38;5;28mself[39m[38;5;241m.[39mposterior_trace[38;5;241m.[39mget_values(var_name, combine[38;5;241m=[39m[38;5;28;01mFalse[39;00m, squeeze[38;5;241m=[39m[38;5;28;01mFalse[39;00m)
+[1;32m    277[0m         )
+[1;32m    278[0m [38;5;28;01mreturn[39;00m (
+[0;32m--> 279[0m     [43mdict_to_dataset[49m[43m([49m
+[1;32m    280[0m [43m        [49m[43mdata[49m[43m,[49m
+[1;32m    281[0m [43m        [49m[43mlibrary[49m[38;5;241;43m=[39;49m[43mpymc[49m[43m,[49m
+[1;32m    282[0m [43m        [49m[43mcoords[49m[38;5;241;43m=[39;49m[38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43mcoords[49m[43m,[49m
+[1;32m    283[0m [43m        [49m[43mdims[49m[38;5;241;43m=[39;49m[38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43mdims[49m[43m,[49m
+[1;32m    284[0m [43m        [49m[43mattrs[49m[38;5;241;43m=[39;49m[38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43mattrs[49m[43m,[49m
+[1;32m    285[0m [43m    [49m[43m)[49m,
+[1;32m    286[0m     dict_to_dataset(
+[1;32m    287[0m         data_warmup,
+[1;32m    288[0m         library[38;5;241m=[39mpymc,
+[1;32m    289[0m         coords[38;5;241m=[39m[38;5;28mself[39m[38;5;241m.[39mcoords,
+[1;32m    290[0m         dims[38;5;241m=[39m[38;5;28mself[39m[38;5;241m.[39mdims,
+[1;32m    291[0m         attrs[38;5;241m=[39m[38;5;28mself[39m[38;5;241m.[39mattrs,
+[1;32m    292[0m     ),
+[1;32m    293[0m )
+
+File [0;32m/opt/hostedtoolcache/Python/3.9.19/x64/lib/python3.9/site-packages/arviz/data/base.py:318[0m, in [0;36mdict_to_dataset[0;34m(data, attrs, library, coords, dims, default_dims, index_origin, skip_event_dims)[0m
+[1;32m    304[0m     dims [38;5;241m=[39m {}
+[1;32m    306[0m data_vars [38;5;241m=[39m {
+[1;32m    307[0m     key: numpy_to_data_array(
+[1;32m    308[0m         values,
+[0;32m   (...)[0m
+[1;32m    316[0m     [38;5;28;01mfor[39;00m key, values [38;5;129;01min[39;00m data[38;5;241m.[39mitems()
+[1;32m    317[0m }
+[0;32m--> 318[0m [38;5;28;01mreturn[39;00m xr[38;5;241m.[39mDataset(data_vars[38;5;241m=[39mdata_vars, attrs[38;5;241m=[39m[43mmake_attrs[49m[43m([49m[43mattrs[49m[38;5;241;43m=[39;49m[43mattrs[49m[43m,[49m[43m [49m[43mlibrary[49m[38;5;241;43m=[39;49m[43mlibrary[49m[43m)[49m)
+
+File [0;32m/opt/hostedtoolcache/Python/3.9.19/x64/lib/python3.9/site-packages/arviz/data/base.py:344[0m, in [0;36mmake_attrs[0;34m(attrs, library)[0m
+[1;32m    342[0m     version [38;5;241m=[39m importlib[38;5;241m.[39mmetadata[38;5;241m.[39mversion(library_name)
+[1;32m    343[0m     default_attrs[[38;5;124m"[39m[38;5;124minference_library_version[39m[38;5;124m"[39m] [38;5;241m=[39m version
+[0;32m--> 344[0m [38;5;28;01mexcept[39;00m [43mimportlib[49m[38;5;241;43m.[39;49m[43mmetadata[49m[38;5;241m.[39mPackageNotFoundError:
+[1;32m    345[0m     [38;5;28;01mif[39;00m [38;5;28mhasattr[39m(library, [38;5;124m"[39m[38;5;124m__version__[39m[38;5;124m"[39m):
+[1;32m    346[0m         version [38;5;241m=[39m library[38;5;241m.[39m__version__
+
+[0;31mAttributeError[0m: module 'importlib' has no attribute 'metadata'
+

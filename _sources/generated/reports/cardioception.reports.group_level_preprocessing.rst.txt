@@ -1,0 +1,6 @@
+﻿cardioception.reports.group\_level\_preprocessing
+=================================================
+
+.. currentmodule:: cardioception.reports
+
+.. autofunction:: group_level_preprocessing

@@ -1,0 +1,1019 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cardioception.HRD.parameters &#8212; cardioception 0.5.0 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '_modules/cardioception/HRD/parameters';</script>
+    <link rel="shortcut icon" href="../../../_static/logo_small.svg"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+
+<a class="navbar-brand logo" href="../../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/logo_small.svg" class="logo__image only-light" alt=""/>
+    <script>document.write(`<img src="../../../_static/logo_small.svg" class="logo__image only-dark" alt=""/>`);</script>
+  
+  
+    <p class="title logo__title">Cardioception</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav class="navbar-nav">
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../measuring.html">
+                        Theory
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../user_guide.html">
+                        Guide
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../api.html">
+                        API
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../stats.html">
+                        Statistical analysis
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../cite.html">
+                        Cite
+                      </a>
+                    </li>
+                
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+                    <li class="nav-item">
+                      <a class="nav-link dropdown-item nav-internal" href="../../../references.html">
+                        References
+                      </a>
+                    </li>
+                
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/LegrandNico/Cardioception" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github-square fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/visceral_mind" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-twitter-square fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Twitter</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/Cardioception/" title="Pypi" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fas fa-box fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Pypi</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+    </div>
+  
+
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item">
+<nav class="navbar-nav">
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../measuring.html">
+                        Theory
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../user_guide.html">
+                        Guide
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../api.html">
+                        API
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../stats.html">
+                        Statistical analysis
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../cite.html">
+                        Cite
+                      </a>
+                    </li>
+                
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links-2">
+                    More
+                </button>
+                <ul id="pst-nav-more-links-2" class="dropdown-menu">
+                    
+                    <li class="nav-item">
+                      <a class="nav-link dropdown-item nav-internal" href="../../../references.html">
+                        References
+                      </a>
+                    </li>
+                
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/LegrandNico/Cardioception" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github-square fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/visceral_mind" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-twitter-square fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Twitter</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/Cardioception/" title="Pypi" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fas fa-box fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Pypi</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumb">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../../index.html" class="nav-link">Module code</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">cardioceptio...</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <h1>Source code for cardioception.HRD.parameters</h1><div class="highlight"><pre>
+<span></span><span class="c1"># Author: Nicolas Legrand &lt;nicolas.legrand@cas.au.dk&gt;</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Any</span><span class="p">,</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Optional</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">pkg_resources</span>  <span class="c1"># type: ignore</span>
+<span class="kn">import</span> <span class="nn">serial</span>
+<span class="kn">from</span> <span class="nn">systole</span> <span class="kn">import</span> <span class="n">serialSim</span>
+<span class="kn">from</span> <span class="nn">systole.recording</span> <span class="kn">import</span> <span class="n">Oximeter</span>
+
+<span class="kn">from</span> <span class="nn">cardioception.HRD.languages</span> <span class="kn">import</span> <span class="n">danish</span><span class="p">,</span> <span class="n">danish_children</span><span class="p">,</span> <span class="n">english</span><span class="p">,</span> <span class="n">french</span>
+
+
+<div class="viewcode-block" id="getParameters"><a class="viewcode-back" href="../../../generated/HRD.parameters/cardioception.HRD.parameters.getParameters.html#cardioception.HRD.parameters.getParameters">[docs]</a><span class="k">def</span> <span class="nf">getParameters</span><span class="p">(</span>
+    <span class="n">participant</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;SubjectTest&quot;</span><span class="p">,</span>
+    <span class="n">session</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;001&quot;</span><span class="p">,</span>
+    <span class="n">serialPort</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;COM3&quot;</span><span class="p">,</span>
+    <span class="n">setup</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;behavioral&quot;</span><span class="p">,</span>
+    <span class="n">stairType</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;psi&quot;</span><span class="p">,</span>
+    <span class="n">exteroception</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="n">catchTrials</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">,</span>
+    <span class="n">nTrials</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">120</span><span class="p">,</span>
+    <span class="n">device</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;mouse&quot;</span><span class="p">,</span>
+    <span class="n">screenNb</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="n">fullscr</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="n">nBreaking</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">20</span><span class="p">,</span>
+    <span class="n">resultPath</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">language</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;english&quot;</span><span class="p">,</span>
+    <span class="n">systole_kw</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="p">{},</span>
+<span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Create Heart Rate Discrimination task parameters.</span>
+
+<span class="sd">    Many task parameters, aesthetics, and options are controlled by the</span>
+<span class="sd">    parameters dictionary defined herein. These are intended to provide</span>
+<span class="sd">    flexibility and modularity to the task. In many cases, unique versions of the</span>
+<span class="sd">    task (e.g., with or without confidence ratings or choice feedback) can be</span>
+<span class="sd">    created simply by changing these parameters, with no further interaction</span>
+<span class="sd">    with the underlying task code.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    device :</span>
+<span class="sd">        Select how the participant provides responses. Can be `&#39;mouse&#39;` or `&#39;keyboard&#39;`.</span>
+<span class="sd">    exteroception :</span>
+<span class="sd">        If `True`, the task will include an exteroceptive (half of the trials).</span>
+<span class="sd">    fullscr :</span>
+<span class="sd">        If `True`, activate full-screen mode.</span>
+<span class="sd">    language :</span>
+<span class="sd">        The language used for the instruction. Can be `&quot;english&quot;`, `&quot;danish&quot;` or</span>
+<span class="sd">        `&quot;danish_children&quot;` (a slightly simplified danish version), or `&quot;french&quot;`.</span>
+<span class="sd">    nBreaking :</span>
+<span class="sd">        Number of trials to run before the break.</span>
+<span class="sd">    nStaircase :</span>
+<span class="sd">        Number of staircases to use per condition (exteroceptive and</span>
+<span class="sd">        interoceptive).</span>
+<span class="sd">    nTrials :</span>
+<span class="sd">        The number of trials to run (UpDown and psi staircase).</span>
+<span class="sd">        .. note::</span>
+<span class="sd">           This number indicates the total number of trials that will be presented</span>
+<span class="sd">           during the experiment. If `nTrials=50` and `exteroception=False`, the task</span>
+<span class="sd">           contains 50 interoceptive trials. If `nTrials=50` and `exteroception=True`,</span>
+<span class="sd">           the task contains 25 interoceptive trials and 25 exteroceptive trials.</span>
+<span class="sd">    participant :</span>
+<span class="sd">        Subject ID. The default is &#39;Participant&#39;.</span>
+<span class="sd">    catchTrials :</span>
+<span class="sd">        Ratio of Psi trials allocated to extreme values (+20 or -20 bpm with some</span>
+<span class="sd">        jitter) to control for a range of stimuli presented. Default to `0.0` (no catch</span>
+<span class="sd">        trials). If not `0.0`, recommended value is `0.2`.</span>
+<span class="sd">    resultPath :</span>
+<span class="sd">        Where to save the results.</span>
+<span class="sd">    screenNb :</span>
+<span class="sd">        Screen number. Used to parametrize py:func:`psychopy.visual.Window`. Defaults</span>
+<span class="sd">        to `0`.</span>
+<span class="sd">    serialPort:</span>
+<span class="sd">        The USB port where the pulse oximeter is plugged. Should be written as a string</span>
+<span class="sd">        e.g. `&quot;COM3&quot;` for USB ports on Windows.</span>
+<span class="sd">    session :</span>
+<span class="sd">        Session number. Default to &#39;001&#39;.</span>
+<span class="sd">    setup :</span>
+<span class="sd">        Context of oximeter recording. `&quot;ehavioral&quot;` will be recorded through a Nonin</span>
+<span class="sd">        pulse oximeter and `&quot;test&quot;` will use a pre-recorded pulse time series (for</span>
+<span class="sd">        testing only).</span>
+<span class="sd">    stairType :</span>
+<span class="sd">        Staircase type. Can be &quot;psi&quot; or &quot;updown&quot;. The default is set to &quot;psi&quot;.</span>
+<span class="sd">    systole_kw :</span>
+<span class="sd">        Additional keyword arguments for :py:class:`systole.recorder.Oxmeter`.</span>
+
+<span class="sd">    Attributes</span>
+<span class="sd">    ----------</span>
+<span class="sd">    confScale :</span>
+<span class="sd">        The range of the confidence rating scale.</span>
+<span class="sd">    device :</span>
+<span class="sd">        The device used for response and rating scale. Can be `&quot;keyboard&quot;` or</span>
+<span class="sd">        `&quot;mouse&quot;`.</span>
+<span class="sd">    HRcutOff :</span>
+<span class="sd">        Cut off for extreme heart rate values during recording.</span>
+<span class="sd">    ExteroCondition :</span>
+<span class="sd">        If `True`, the task includes an exteroceptive (half of the trials).</span>
+<span class="sd">    isi :</span>
+<span class="sd">        Range of the inter-stimulus interval (seconds). Should be in the form of (low,</span>
+<span class="sd">        high). At each trial, the value is generated using a uniform distribution</span>
+<span class="sd">        between these two values. The default is set to `(0.25, 0.25)` so the value is</span>
+<span class="sd">        fixed at `0.25`.</span>
+<span class="sd">    labelsRating :</span>
+<span class="sd">        The labels of the confidence rating scale.</span>
+<span class="sd">    lambdaExtero :</span>
+<span class="sd">        (3d) Posterior estimate of the psychophysics function parameters (slope and</span>
+<span class="sd">        threshold) across trials for the exteroceptive condition.</span>
+<span class="sd">    lambdaIntero :</span>
+<span class="sd">        (3d) Posterior estimate of the psychophysics function parameters (slope and</span>
+<span class="sd">        threshold) across trials for the interoceptive condition.</span>
+<span class="sd">    listenLogo, heartLogo : Psychopy visual instance</span>
+<span class="sd">        Image used for the inference and recording phases, respectively.</span>
+<span class="sd">    maxRatingTime :</span>
+<span class="sd">        The maximum time for a confidence rating (in seconds).</span>
+<span class="sd">    minRatingTime :</span>
+<span class="sd">        The minimum time before a rating can be provided during the confidence</span>
+<span class="sd">        rating (in seconds).</span>
+<span class="sd">    monitor :</span>
+<span class="sd">        The monitor used to present the task (Psychopy parameter).</span>
+<span class="sd">    nBreaking :</span>
+<span class="sd">        Number of trials to run before the break.</span>
+<span class="sd">    nConfidence :</span>
+<span class="sd">        The number of trials with feedback during the tutorial phase (no</span>
+<span class="sd">        feedback).</span>
+<span class="sd">    nFeedback :</span>
+<span class="sd">        The number of trials with feedback during the tutorial phase (no</span>
+<span class="sd">        confidence rating).</span>
+<span class="sd">    nFinger :</span>
+<span class="sd">        The finger number (&quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot; or &quot;5&quot;) where the participant</span>
+<span class="sd">        decided to place the pulse oximeter (if relevant).</span>
+<span class="sd">    nTrials :</span>
+<span class="sd">        The number of trials to run (UpDown and psi staircase).</span>
+<span class="sd">        .. note::</span>
+<span class="sd">           This number indicates the total number of trials that will be presented</span>
+<span class="sd">           during the experiment. If `nTrials=50` and `exteroception=False`, the task</span>
+<span class="sd">           contains 50 interoceptive trials. If `nTrials=50` and `exteroception=True`,</span>
+<span class="sd">           the task contains 25 interoceptive trials and 25 exteroceptive trials.</span>
+<span class="sd">    participant :</span>
+<span class="sd">        Subject ID. The default is &#39;Participant&#39;.</span>
+<span class="sd">    path :</span>
+<span class="sd">        The task working directory.</span>
+<span class="sd">    response_keys :</span>
+<span class="sd">        A dictionary listing the possible response key for Faster/More and Slower/Less</span>
+<span class="sd">        trials. The default is `&quot;up&quot;`/`&quot;down&quot;`. Only relevant if `device==&quot;keyboard&quot;`.</span>
+<span class="sd">    resultPath :</span>
+<span class="sd">        Where to save the results.</span>
+<span class="sd">    serial :</span>
+<span class="sd">        The serial port is used to record the PPG activity.</span>
+<span class="sd">    screenNb :</span>
+<span class="sd">        The screen number (Psychopy parameter). The default is set to 0.</span>
+<span class="sd">    signal_df :</span>
+<span class="sd">        Dataframe where the pulse signal recorded during the interoception</span>
+<span class="sd">        condition will be stored.</span>
+<span class="sd">    stairCase :</span>
+<span class="sd">        The staircase instances for &#39;psi&#39; and &#39;UpDown&#39;. Each entry contains</span>
+<span class="sd">        a dictionary for &#39;Intero&#39; and &#39;Extero conditions&#39; (if relevant).</span>
+<span class="sd">    staircaseType :</span>
+<span class="sd">        Vector indexing stairce type (`&#39;UpDown&#39;`, `&#39;psi&#39;`, `&#39;psiCatchTrial&#39;`).</span>
+<span class="sd">    startKey :</span>
+<span class="sd">        The key to press to start the task and go to the next steps.</span>
+<span class="sd">    respMax :</span>
+<span class="sd">        The maximum time for decision (in seconds).</span>
+<span class="sd">    results :</span>
+<span class="sd">        The result directory.</span>
+<span class="sd">    session :</span>
+<span class="sd">        Session number. Default to &#39;001&#39;.</span>
+<span class="sd">    setup :</span>
+<span class="sd">        The context of recording. Can be `&#39;behavioral&#39;` or `&#39;test&#39;`.</span>
+<span class="sd">    texts :</span>
+<span class="sd">        Long text elements.</span>
+<span class="sd">    textSize :</span>
+<span class="sd">        Scaling parameter for text size.</span>
+<span class="sd">    triggers :</span>
+<span class="sd">        Dictionary {str, callable or None}. The function will be executed</span>
+<span class="sd">        before the corresponding trial sequence. The default values are</span>
+<span class="sd">        `None` (no trigger sent).</span>
+<span class="sd">        * `&quot;trialStart&quot;`</span>
+<span class="sd">        * `&quot;trialStop&quot;`</span>
+<span class="sd">        * `&quot;listeningStart&quot;`</span>
+<span class="sd">        * `&quot;listeningStop&quot;`</span>
+<span class="sd">        * `&quot;decisionStart&quot;`</span>
+<span class="sd">        * `&quot;decisionStop&quot;`</span>
+<span class="sd">        * `&quot;confidenceStart&quot;`</span>
+<span class="sd">        * `&quot;confidenceStop&quot;`</span>
+<span class="sd">    win :</span>
+<span class="sd">        The window in which to draw objects.</span>
+
+<span class="sd">    Notes</span>
+<span class="sd">    -----</span>
+<span class="sd">    When using the `behavioral` setup, triggers will be sent to the PPG  recording. The</span>
+<span class="sd">    trigger channel is coding for different events during the task as follows:</span>
+<span class="sd">    - Trial start: 1</span>
+<span class="sd">    - recording trigger: 2</span>
+<span class="sd">    - sound trigger : 3</span>
+<span class="sd">    - rating trigger: 4</span>
+<span class="sd">    - end trigger: 5</span>
+<span class="sd">    All these events, except the trial start, have also their time stamps encoded in the</span>
+<span class="sd">    behavioural results data frame.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="kn">from</span> <span class="nn">psychopy</span> <span class="kn">import</span> <span class="n">data</span><span class="p">,</span> <span class="n">event</span><span class="p">,</span> <span class="n">visual</span>
+
+    <span class="n">parameters</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;ExteroCondition&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">exteroception</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;device&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">device</span>
+    <span class="k">if</span> <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;device&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;keyboard&quot;</span><span class="p">:</span>
+        <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;confScale&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;labelsRating&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Guess&quot;</span><span class="p">,</span> <span class="s2">&quot;Certain&quot;</span><span class="p">]</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;screenNb&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">screenNb</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;monitor&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;testMonitor&quot;</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;nFeedback&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;nConfidence&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">8</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;respMax&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;minRatingTime&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.5</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;maxRatingTime&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;isi&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">)</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;startKey&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;space&quot;</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;response_keys&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;More&quot;</span><span class="p">:</span> <span class="s2">&quot;up&quot;</span><span class="p">,</span> <span class="s2">&quot;Less&quot;</span><span class="p">:</span> <span class="s2">&quot;down&quot;</span><span class="p">}</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;nTrials&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">nTrials</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;nBreaking&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">nBreaking</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;lambdaIntero&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># Save the history of lambda values</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;lambdaExtero&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>  <span class="c1"># Save the history of lambda values</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;nFinger&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;signal_df&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([])</span>  <span class="c1"># Physiological recording</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;results_df&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">([])</span>  <span class="c1"># Behavioral results</span>
+
+    <span class="c1"># Set default path /Results/ &#39;Subject ID&#39; /</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;participant&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">participant</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;session&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">session</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;path&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">resultPath</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;resultPath&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;path&quot;</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;/data/&quot;</span> <span class="o">+</span> <span class="n">participant</span> <span class="o">+</span> <span class="n">session</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;resultPath&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="c1"># Create Results directory if not already exists</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;resultPath&quot;</span><span class="p">]):</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;resultPath&quot;</span><span class="p">])</span>
+
+    <span class="c1"># Store posterior in a dictionary</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;staircaisePosteriors&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;staircaisePosteriors&quot;</span><span class="p">][</span><span class="s2">&quot;Intero&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">if</span> <span class="n">exteroception</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;staircaisePosteriors&quot;</span><span class="p">][</span><span class="s2">&quot;Extero&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="n">nCatch</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;nTrials&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">catchTrials</span><span class="p">)</span>
+    <span class="n">nStaircase</span> <span class="o">=</span> <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;nTrials&quot;</span><span class="p">]</span> <span class="o">-</span> <span class="n">nCatch</span>
+
+    <span class="c1"># Vector encoding the staircase type</span>
+    <span class="k">if</span> <span class="n">stairType</span> <span class="o">==</span> <span class="s2">&quot;psi&quot;</span><span class="p">:</span>
+        <span class="n">sc</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="s2">&quot;psi&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">nStaircase</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">stairType</span> <span class="o">==</span> <span class="s2">&quot;updown&quot;</span><span class="p">:</span>
+        <span class="n">sc</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="s2">&quot;updown&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">nStaircase</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;stairType should be &#39;psi&#39; or &#39;updown&#39;&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Create and randomize condition vectors separately for each staircase</span>
+    <span class="k">if</span> <span class="n">exteroception</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="c1"># Create a modality vector containing nTrials/2 Intero and Extero conditions</span>
+        <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;Modality&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">(</span>
+            <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="s2">&quot;Extero&quot;</span><span class="p">,</span> <span class="s2">&quot;Intero&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="nb">int</span><span class="p">(</span><span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;nTrials&quot;</span><span class="p">]</span> <span class="o">/</span> <span class="mi">2</span><span class="p">))]</span>
+        <span class="p">)</span>
+    <span class="k">elif</span> <span class="n">exteroception</span> <span class="ow">is</span> <span class="kc">False</span><span class="p">:</span>
+        <span class="c1"># Create a modality vector containing nTrials/2 Intero and Extero conditions</span>
+        <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;Modality&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="s2">&quot;Intero&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="nb">int</span><span class="p">(</span><span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;nTrials&quot;</span><span class="p">]))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;exteroception should be a boolean&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Vector encoding the type of trial (psi, up/down or catch)</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;staircaseType&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">(</span>
+        <span class="p">[</span>
+            <span class="n">sc</span><span class="p">,</span>
+            <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="s2">&quot;CatchTrial&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="nb">int</span><span class="p">((</span><span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;nTrials&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="n">catchTrials</span><span class="p">))),</span>
+        <span class="p">]</span>
+    <span class="p">)</span>
+
+    <span class="c1"># Shuffle all trials</span>
+    <span class="n">shuffler</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">permutation</span><span class="p">(</span><span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;nTrials&quot;</span><span class="p">])</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;Modality&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;Modality&quot;</span><span class="p">][</span><span class="n">shuffler</span><span class="p">]</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;staircaseType&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;staircaseType&quot;</span><span class="p">][</span><span class="n">shuffler</span><span class="p">]</span>
+
+    <span class="c1"># Default parameters for the basic staircase are set here. Please see</span>
+    <span class="c1"># PsychoPy Staircase Handler Documentation for full options. By default,</span>
+    <span class="c1"># the task implements a staircase using Psi method.</span>
+    <span class="c1"># If UpDown is selected, 1 or 2 interleaved staircases are used (see</span>
+    <span class="c1"># options in parameters dictionary), one is initialized &#39;high&#39; and the other</span>
+    <span class="c1"># &#39;low&#39;.</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;stairCase&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="k">if</span> <span class="n">stairType</span> <span class="o">==</span> <span class="s2">&quot;updown&quot;</span><span class="p">:</span>
+        <span class="n">conditions</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;low&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;startVal&quot;</span><span class="p">:</span> <span class="o">-</span><span class="mf">40.5</span><span class="p">,</span>
+                <span class="s2">&quot;nUp&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="s2">&quot;nDown&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="s2">&quot;stepSizes&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+                <span class="s2">&quot;stepType&quot;</span><span class="p">:</span> <span class="s2">&quot;lin&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;minVal&quot;</span><span class="p">:</span> <span class="o">-</span><span class="mf">40.5</span><span class="p">,</span>
+                <span class="s2">&quot;maxVal&quot;</span><span class="p">:</span> <span class="mf">40.5</span><span class="p">,</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+                <span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;high&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;startVal&quot;</span><span class="p">:</span> <span class="mf">40.5</span><span class="p">,</span>
+                <span class="s2">&quot;nUp&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="s2">&quot;nDown&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                <span class="s2">&quot;stepSizes&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+                <span class="s2">&quot;stepType&quot;</span><span class="p">:</span> <span class="s2">&quot;lin&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;minVal&quot;</span><span class="p">:</span> <span class="o">-</span><span class="mf">40.5</span><span class="p">,</span>
+                <span class="s2">&quot;maxVal&quot;</span><span class="p">:</span> <span class="mf">40.5</span><span class="p">,</span>
+            <span class="p">},</span>
+        <span class="p">]</span>
+        <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;stairCase&quot;</span><span class="p">][</span><span class="s2">&quot;Intero&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">MultiStairHandler</span><span class="p">(</span>
+            <span class="n">conditions</span><span class="o">=</span><span class="n">conditions</span><span class="p">,</span> <span class="n">nTrials</span><span class="o">=</span><span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;nTrials&quot;</span><span class="p">]</span>
+        <span class="p">)</span>
+
+    <span class="k">elif</span> <span class="n">stairType</span> <span class="o">==</span> <span class="s2">&quot;psi&quot;</span><span class="p">:</span>
+        <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;stairCase&quot;</span><span class="p">][</span><span class="s2">&quot;Intero&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">PsiHandler</span><span class="p">(</span>
+            <span class="n">nTrials</span><span class="o">=</span><span class="n">nTrials</span><span class="p">,</span>
+            <span class="n">intensRange</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mf">50.5</span><span class="p">,</span> <span class="mf">50.5</span><span class="p">],</span>
+            <span class="n">alphaRange</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mf">50.5</span><span class="p">,</span> <span class="mf">50.5</span><span class="p">],</span>
+            <span class="n">betaRange</span><span class="o">=</span><span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">25</span><span class="p">],</span>
+            <span class="n">intensPrecision</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+            <span class="n">alphaPrecision</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+            <span class="n">betaPrecision</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
+            <span class="n">delta</span><span class="o">=</span><span class="mf">0.02</span><span class="p">,</span>
+            <span class="n">stepType</span><span class="o">=</span><span class="s2">&quot;lin&quot;</span><span class="p">,</span>
+            <span class="n">expectedMin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+        <span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">exteroception</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">stairType</span> <span class="o">==</span> <span class="s2">&quot;updown&quot;</span><span class="p">:</span>
+            <span class="n">conditions</span> <span class="o">=</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;low&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;startVal&quot;</span><span class="p">:</span> <span class="o">-</span><span class="mf">40.5</span><span class="p">,</span>
+                    <span class="s2">&quot;nUp&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                    <span class="s2">&quot;nDown&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                    <span class="s2">&quot;stepSizes&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+                    <span class="s2">&quot;stepType&quot;</span><span class="p">:</span> <span class="s2">&quot;lin&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;minVal&quot;</span><span class="p">:</span> <span class="o">-</span><span class="mf">40.5</span><span class="p">,</span>
+                    <span class="s2">&quot;maxVal&quot;</span><span class="p">:</span> <span class="mf">40.5</span><span class="p">,</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;high&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;startVal&quot;</span><span class="p">:</span> <span class="mf">40.5</span><span class="p">,</span>
+                    <span class="s2">&quot;nUp&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                    <span class="s2">&quot;nDown&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+                    <span class="s2">&quot;stepSizes&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+                    <span class="s2">&quot;stepType&quot;</span><span class="p">:</span> <span class="s2">&quot;lin&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;minVal&quot;</span><span class="p">:</span> <span class="o">-</span><span class="mf">40.5</span><span class="p">,</span>
+                    <span class="s2">&quot;maxVal&quot;</span><span class="p">:</span> <span class="mf">40.5</span><span class="p">,</span>
+                <span class="p">},</span>
+            <span class="p">]</span>
+            <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;stairCase&quot;</span><span class="p">][</span><span class="s2">&quot;Extero&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">MultiStairHandler</span><span class="p">(</span>
+                <span class="n">conditions</span><span class="o">=</span><span class="n">conditions</span><span class="p">,</span> <span class="n">nTrials</span><span class="o">=</span><span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;nTrials&quot;</span><span class="p">]</span>
+            <span class="p">)</span>
+
+        <span class="k">elif</span> <span class="n">stairType</span> <span class="o">==</span> <span class="s2">&quot;psi&quot;</span><span class="p">:</span>
+            <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;stairCase&quot;</span><span class="p">][</span><span class="s2">&quot;Extero&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">PsiHandler</span><span class="p">(</span>
+                <span class="n">nTrials</span><span class="o">=</span><span class="n">nTrials</span><span class="p">,</span>
+                <span class="n">intensRange</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mf">50.5</span><span class="p">,</span> <span class="mf">50.5</span><span class="p">],</span>
+                <span class="n">alphaRange</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mf">50.5</span><span class="p">,</span> <span class="mf">50.5</span><span class="p">],</span>
+                <span class="n">betaRange</span><span class="o">=</span><span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">25</span><span class="p">],</span>
+                <span class="n">intensPrecision</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+                <span class="n">alphaPrecision</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+                <span class="n">betaPrecision</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
+                <span class="n">delta</span><span class="o">=</span><span class="mf">0.02</span><span class="p">,</span>
+                <span class="n">stepType</span><span class="o">=</span><span class="s2">&quot;lin&quot;</span><span class="p">,</span>
+                <span class="n">expectedMin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+            <span class="p">)</span>
+
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;setup&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">setup</span>
+    <span class="k">if</span> <span class="n">setup</span> <span class="o">==</span> <span class="s2">&quot;behavioral&quot;</span><span class="p">:</span>
+        <span class="c1"># PPG recording</span>
+        <span class="n">port</span> <span class="o">=</span> <span class="n">serial</span><span class="o">.</span><span class="n">Serial</span><span class="p">(</span><span class="n">serialPort</span><span class="p">)</span>
+        <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;oxiTask&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Oximeter</span><span class="p">(</span>
+            <span class="n">serial</span><span class="o">=</span><span class="n">port</span><span class="p">,</span> <span class="n">sfreq</span><span class="o">=</span><span class="mi">75</span><span class="p">,</span> <span class="n">add_channels</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="o">**</span><span class="n">systole_kw</span>
+        <span class="p">)</span>
+        <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;oxiTask&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">setup</span><span class="p">()</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">duration</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">setup</span> <span class="o">==</span> <span class="s2">&quot;test&quot;</span><span class="p">:</span>
+        <span class="c1"># Use pre-recorded pulse time series for testing</span>
+        <span class="n">port</span> <span class="o">=</span> <span class="n">serialSim</span><span class="p">()</span>
+        <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;oxiTask&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Oximeter</span><span class="p">(</span>
+            <span class="n">serial</span><span class="o">=</span><span class="n">port</span><span class="p">,</span> <span class="n">sfreq</span><span class="o">=</span><span class="mi">75</span><span class="p">,</span> <span class="n">add_channels</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="o">**</span><span class="n">systole_kw</span>
+        <span class="p">)</span>
+        <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;oxiTask&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">setup</span><span class="p">()</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">duration</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="c1">##############</span>
+    <span class="c1"># Load texts #</span>
+    <span class="c1">##############</span>
+    <span class="k">if</span> <span class="n">language</span> <span class="o">==</span> <span class="s2">&quot;english&quot;</span><span class="p">:</span>
+        <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;texts&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">english</span><span class="p">(</span>
+            <span class="n">device</span><span class="o">=</span><span class="n">device</span><span class="p">,</span> <span class="n">setup</span><span class="o">=</span><span class="n">setup</span><span class="p">,</span> <span class="n">exteroception</span><span class="o">=</span><span class="n">exteroception</span>
+        <span class="p">)</span>
+    <span class="k">elif</span> <span class="n">language</span> <span class="o">==</span> <span class="s2">&quot;danish&quot;</span><span class="p">:</span>
+        <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;texts&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">danish</span><span class="p">(</span>
+            <span class="n">device</span><span class="o">=</span><span class="n">device</span><span class="p">,</span> <span class="n">setup</span><span class="o">=</span><span class="n">setup</span><span class="p">,</span> <span class="n">exteroception</span><span class="o">=</span><span class="n">exteroception</span>
+        <span class="p">)</span>
+    <span class="k">elif</span> <span class="n">language</span> <span class="o">==</span> <span class="s2">&quot;danish_children&quot;</span><span class="p">:</span>
+        <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;texts&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">danish_children</span><span class="p">(</span>
+            <span class="n">device</span><span class="o">=</span><span class="n">device</span><span class="p">,</span> <span class="n">setup</span><span class="o">=</span><span class="n">setup</span><span class="p">,</span> <span class="n">exteroception</span><span class="o">=</span><span class="n">exteroception</span>
+        <span class="p">)</span>
+    <span class="k">elif</span> <span class="n">language</span> <span class="o">==</span> <span class="s2">&quot;french&quot;</span><span class="p">:</span>
+        <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;texts&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">french</span><span class="p">(</span>
+            <span class="n">device</span><span class="o">=</span><span class="n">device</span><span class="p">,</span> <span class="n">setup</span><span class="o">=</span><span class="n">setup</span><span class="p">,</span> <span class="n">exteroception</span><span class="o">=</span><span class="n">exteroception</span>
+        <span class="p">)</span>
+
+    <span class="c1"># Open window</span>
+    <span class="k">if</span> <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;setup&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;test&quot;</span><span class="p">:</span>
+        <span class="n">fullscr</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;win&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">visual</span><span class="o">.</span><span class="n">Window</span><span class="p">(</span>
+        <span class="n">monitor</span><span class="o">=</span><span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;monitor&quot;</span><span class="p">],</span>
+        <span class="n">screen</span><span class="o">=</span><span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;screenNb&quot;</span><span class="p">],</span>
+        <span class="n">fullscr</span><span class="o">=</span><span class="n">fullscr</span><span class="p">,</span>
+        <span class="n">units</span><span class="o">=</span><span class="s2">&quot;height&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;win&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">mouseVisible</span> <span class="o">=</span> <span class="kc">False</span>
+
+    <span class="c1">###############</span>
+    <span class="c1"># Image loading</span>
+    <span class="c1">###############</span>
+    <span class="k">if</span> <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;setup&quot;</span><span class="p">]</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;test&quot;</span><span class="p">,</span> <span class="s2">&quot;behavioral&quot;</span><span class="p">]:</span>
+        <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;pulseSchema&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">visual</span><span class="o">.</span><span class="n">ImageStim</span><span class="p">(</span>
+            <span class="n">win</span><span class="o">=</span><span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;win&quot;</span><span class="p">],</span>
+            <span class="n">units</span><span class="o">=</span><span class="s2">&quot;height&quot;</span><span class="p">,</span>
+            <span class="n">image</span><span class="o">=</span><span class="n">pkg_resources</span><span class="o">.</span><span class="n">resource_filename</span><span class="p">(</span><span class="vm">__name__</span><span class="p">,</span> <span class="s2">&quot;Images/pulseOximeter.png&quot;</span><span class="p">),</span>
+            <span class="n">pos</span><span class="o">=</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">),</span>
+        <span class="p">)</span>
+        <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;pulseSchema&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">size</span> <span class="o">*=</span> <span class="mf">0.2</span>
+        <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;handSchema&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">visual</span><span class="o">.</span><span class="n">ImageStim</span><span class="p">(</span>
+            <span class="n">win</span><span class="o">=</span><span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;win&quot;</span><span class="p">],</span>
+            <span class="n">units</span><span class="o">=</span><span class="s2">&quot;height&quot;</span><span class="p">,</span>
+            <span class="n">image</span><span class="o">=</span><span class="n">pkg_resources</span><span class="o">.</span><span class="n">resource_filename</span><span class="p">(</span><span class="vm">__name__</span><span class="p">,</span> <span class="s2">&quot;Images/hand.png&quot;</span><span class="p">),</span>
+            <span class="n">pos</span><span class="o">=</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.08</span><span class="p">),</span>
+        <span class="p">)</span>
+        <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;handSchema&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">size</span> <span class="o">*=</span> <span class="mf">0.15</span>
+
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;listenLogo&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">visual</span><span class="o">.</span><span class="n">ImageStim</span><span class="p">(</span>
+        <span class="n">win</span><span class="o">=</span><span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;win&quot;</span><span class="p">],</span>
+        <span class="n">units</span><span class="o">=</span><span class="s2">&quot;height&quot;</span><span class="p">,</span>
+        <span class="n">image</span><span class="o">=</span><span class="n">pkg_resources</span><span class="o">.</span><span class="n">resource_filename</span><span class="p">(</span><span class="vm">__name__</span><span class="p">,</span> <span class="s2">&quot;Images/listen.png&quot;</span><span class="p">),</span>
+        <span class="n">pos</span><span class="o">=</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">),</span>
+    <span class="p">)</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;listenLogo&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">size</span> <span class="o">*=</span> <span class="mf">0.08</span>
+
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;heartLogo&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">visual</span><span class="o">.</span><span class="n">ImageStim</span><span class="p">(</span>
+        <span class="n">win</span><span class="o">=</span><span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;win&quot;</span><span class="p">],</span>
+        <span class="n">units</span><span class="o">=</span><span class="s2">&quot;height&quot;</span><span class="p">,</span>
+        <span class="n">image</span><span class="o">=</span><span class="n">pkg_resources</span><span class="o">.</span><span class="n">resource_filename</span><span class="p">(</span><span class="vm">__name__</span><span class="p">,</span> <span class="s2">&quot;Images/heartbeat.png&quot;</span><span class="p">),</span>
+        <span class="n">pos</span><span class="o">=</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">),</span>
+    <span class="p">)</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;heartLogo&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">size</span> <span class="o">*=</span> <span class="mf">0.04</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;textSize&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.04</span>
+    <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;HRcutOff&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">40</span><span class="p">,</span> <span class="mi">120</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;device&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;keyboard&quot;</span><span class="p">:</span>
+        <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;confScale&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+    <span class="k">elif</span> <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;device&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;mouse&quot;</span><span class="p">:</span>
+        <span class="n">parameters</span><span class="p">[</span><span class="s2">&quot;myMouse&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">event</span><span class="o">.</span><span class="n">Mouse</span><span class="p">()</span>
+
+    <span class="k">return</span> <span class="n">parameters</span></div>
+</pre></div>
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2022-2024, Nicolas Legrand.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.15.2.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
