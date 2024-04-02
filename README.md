@@ -4,7 +4,7 @@
 
 # Cardioception toolbox
 
-<img src="/images/logo.png" align="left" alt="cardioception" height="230" HSPACE=30>
+<img src="https://raw.githubusercontent.com/LegrandNico/cardioception-toolbox/master/docs/source/images/logo.png" align="left" alt="cardioception" height="230" HSPACE=30>
 
 The Cardioception Python Toolbox is a fork of the [original cardioception repository](https://github.com/embodied-computation-group/Cardioception) that I ([Nicolas Legrand](https://github.com/LegrandNico/)) created while working in [the ECG lab](https://www.the-ecg.org/) from 2019 to 2022. My previous lab has taken full control of the repository since then, meaning that I am unfortunately unable to maintain it as it should be. This repository allows me to pursue the maintenance of the package, aiming to provide reliable and robust tasks to measure cardiac interoception, together with computational modelling tools to analyse data gathered with these tasks.
 
@@ -136,7 +136,7 @@ pause
 
 ## The Heartbeat Counting task
 
-<img src= "images/HeartBeatCounting.png">
+<img src= "https://raw.githubusercontent.com/LegrandNico/cardioception-toolbox/master/docs/source/images/HeartBeatCounting.png">
 
 This module is an implementation of the classic "heartbeat counting task" (HCT)<sup>1,2</sup> in which participants attend to their heartbeats in intervals of various lengths. Afterwards, the participant indicates the number of counted heartbeats, and a score is computed to represent their accuracy. In the original version<sup>1</sup>, the task started with a resting period of 60 seconds and consisted of three estimation sessions (25, 35, and 45 seconds) interleaved with resting periods of 30 seconds in the following order:
 
@@ -144,7 +144,7 @@ By default, this task implements the version used in recent publications <sup>4<
 
 ## The Heart Rate Discrimination task
 
-<img src= "images/HeartRateDiscrimination.png">
+<img src= "https://raw.githubusercontent.com/LegrandNico/cardioception-toolbox/master/docs/source/images/HeartRateDiscrimination.png">
 
 This task implements an adaptive psychophysical procedure for estimating participants' ability to discriminate their heart rate. In each trial, participants attend to their heartbeat sensations for five seconds and estimate their average heart rate. Immediately following this period, a cardiac feedback stimulus of 5 tones is played at a particular BPM frequency. The frequency is determined as their estimated average BPM plus or minus an intensity value that is updated by an adaptive staircase procedure (up/down or psi).
 
