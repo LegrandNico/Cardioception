@@ -31,7 +31,7 @@ DESCRIPTION = "Cardioception Python Toolbox"
 LONG_DESCRIPTION = """Measuring cardiac interoception with Psychopy.
 """
 
-DISTNAME = "cardioception"
+DISTNAME = "cardioception-toolbox"
 MAINTAINER = "Nicolas Legrand"
 MAINTAINER_EMAIL = "nicolas.legrand@cas.au.dk"
 
