@@ -1,4 +1,4 @@
-# Cardioception toolbox
+# Cardioception
 
 [![GitHub license](https://img.shields.io/github/license/LegrandNico/cardioception)](https://github.com/LegrandNico/cardioception/blob/master/LICENSE) [![GitHub release](https://img.shields.io/github/release/LegrandNico/cardioception)](https://github.com/LegrandNico/cardioception/releases/) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit) [![pip](https://badge.fury.io/py/cardioception.svg)](https://badge.fury.io/py/cardioception) [![black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) [![mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/) [![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
 

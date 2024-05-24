@@ -2,7 +2,7 @@
 
 ***
 
-# Cardioception toolbox
+# Cardioception
 
 <img src="https://raw.githubusercontent.com/LegrandNico/cardioception/master/docs/source/images/logo.png" align="left" alt="cardioception" height="230" HSPACE=30>
 
