@@ -57,8 +57,8 @@ examples/templates/*
 
 | Notebook | Colab |
 | --- | ---|
-| {ref}`hbc_template` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LegrandNico/cardioception-toolbox/blob/master/docs/source/examples/templates/HeartBeatCounting.ipynb)
-| {ref}`hrd_template` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LegrandNico/cardioception-toolbox/blob/master/docs/source/examples/templates/HeartRateDiscrimination.ipynb)
+| {ref}`hbc_template` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LegrandNico/cardioception/blob/master/docs/source/examples/templates/HeartBeatCounting.ipynb)
+| {ref}`hrd_template` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LegrandNico/cardioception/blob/master/docs/source/examples/templates/HeartRateDiscrimination.ipynb)
 
 ## Bayesian modelling of psychophysics
 
@@ -76,5 +76,5 @@ examples/psychophysics/*
 
 | Notebook | Colab |
 | --- | ---|
-| {ref}`psychophysics_subject_level` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LegrandNico/cardioception-toolbox/blob/master/docs/source/examples/psychophysics/1-psychophysics_subject_level.ipynb)
-| {ref}`psychophysics_group_level` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LegrandNico/cardioception-toolbox/blob/master/docs/source/examples/psychophysics/2-psychophysics_group_level.ipynb)
+| {ref}`psychophysics_subject_level` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LegrandNico/cardioception/blob/master/docs/source/examples/psychophysics/1-psychophysics_subject_level.ipynb)
+| {ref}`psychophysics_group_level` | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LegrandNico/cardioception/blob/master/docs/source/examples/psychophysics/2-psychophysics_group_level.ipynb)
