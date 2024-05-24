@@ -1,9 +1,5 @@
 # Statistical analysis
 
-## Using R
-
-If you want to use R to analyse your data, you can find R/Stan scripts with example notebooks in [this folder](https://github.com/LegrandNico/cardioception-toolbox/tree/master/docs/source/examples/R).
-
 ## Using Python
 
 If you want to use Python to analyse your data, the package includes two functions ([preprocessing](cardioception.reports.preprocessing) and [report](cardioception.reports.report)) that can help automate the analysis of large datasets obtained with the Heart Rate Discrimination task. We also provide notebooks detailing specific parts of the data analysis and Bayesian modelling of psychophysics (see below).
