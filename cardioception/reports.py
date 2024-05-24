@@ -304,20 +304,23 @@ def preprocessing(results: Union[PathLike, pd.DataFrame]) -> pd.DataFrame:
 
 
 def report(
-    result_path: PathLike, report_path: Optional[PathLike] = None, task: str = "HRD"
+    result_path: PathLike, report_path: Optional[PathLike] = None, task: str = "HRD",
+    participant_id: str = "sub-01"
 ):
     """From the results folders, create HTML reports of behavioural and physiological
     data.
 
     Parameters
     ----------
-    resultPath : PathLike
+    resultPath :
         Path variable. Where the results are stored (one participant only).
-    reportPath : PathLike, optional
+    reportPath :
         Where the HTML report should be saved. If `None`, default will be in the
         provided `resultPath`.
-    task : str, optional
+    task :
         The task ("HRD" or "HBC"), by default "HRD".
+    participant_id :
+        The participant ID used in the filename.
 
     """
     from papermill import execute_notebook
@@ -325,7 +328,7 @@ def report(
     if report_path is None:
         report_path = result_path
     temp_notebook = Path(report_path, "temp.ipynb")
-    htmlreport = Path(report_path, f"{task}_report.html")
+    htmlreport = Path(report_path, f"{participant_id}-{task}_report.html")
 
     if task == "HRD":
         template = "HeartRateDiscrimination.ipynb"
