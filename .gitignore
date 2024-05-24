@@ -4,7 +4,7 @@
 .pytest_cache
 /htmlcov
 /dist
-/cardioception.egg-info
+/cardioception_toolbox.egg-info
 /build
 docs/source/auto_examples
 docs/source/generated
