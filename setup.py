@@ -28,9 +28,6 @@ def get_version(rel_path):
         raise RuntimeError("Unable to find version string.")
 
 DESCRIPTION = "Cardioception Python Toolbox"
-LONG_DESCRIPTION = """Measuring cardiac interoception with Psychopy.
-"""
-
 DISTNAME = "cardioception"
 MAINTAINER = "Nicolas Legrand"
 MAINTAINER_EMAIL = "nicolas.legrand@cas.au.dk"
@@ -44,7 +41,8 @@ if __name__ == "__main__":
         maintainer=MAINTAINER,
         maintainer_email=MAINTAINER_EMAIL,
         description=DESCRIPTION,
-        long_description=LONG_DESCRIPTION,
+        long_description=open("README.md", encoding='utf-8').read(),
+        long_description_content_type="text/markdown",
         license=read("LICENSE"),
         version=get_version("cardioception/__init__.py"),
         url="https://github.com/LegrandNico/cardioception",
