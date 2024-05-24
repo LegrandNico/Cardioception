@@ -507,6 +507,68 @@ document.write(`
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>WARNING (pytensor.tensor.blas): Using NumPy C-API based implementation for BLAS functions.
 </pre></div>
 </div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ImportError</span><span class="g g-Whitespace">                               </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">pytensor.tensor</span> <span class="k">as</span> <span class="nn">pt</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">arviz</span> <span class="k">as</span> <span class="nn">az</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">File</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">hostedtoolcache</span><span class="o">/</span><span class="n">Python</span><span class="o">/</span><span class="mf">3.9.19</span><span class="o">/</span><span class="n">x64</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.9</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">arviz</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">34</span>
+<span class="g g-Whitespace">     </span><span class="mi">30</span> <span class="n">_log</span> <span class="o">=</span> <span class="n">Logger</span><span class="p">(</span><span class="s2">&quot;arviz&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">33</span> <span class="kn">from</span> <span class="nn">.data</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="ne">---&gt; </span><span class="mi">34</span> <span class="kn">from</span> <span class="nn">.plots</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="g g-Whitespace">     </span><span class="mi">35</span> <span class="kn">from</span> <span class="nn">.plots.backends</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="g g-Whitespace">     </span><span class="mi">36</span> <span class="kn">from</span> <span class="nn">.stats</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">File</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">hostedtoolcache</span><span class="o">/</span><span class="n">Python</span><span class="o">/</span><span class="mf">3.9.19</span><span class="o">/</span><span class="n">x64</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.9</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">arviz</span><span class="o">/</span><span class="n">plots</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">2</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span><span class="w"> </span><span class="sd">&quot;&quot;&quot;Plotting functions.&quot;&quot;&quot;</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="kn">from</span> <span class="nn">.autocorrplot</span> <span class="kn">import</span> <span class="n">plot_autocorr</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">.bpvplot</span> <span class="kn">import</span> <span class="n">plot_bpv</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">from</span> <span class="nn">.bfplot</span> <span class="kn">import</span> <span class="n">plot_bf</span>
+
+<span class="n">File</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">hostedtoolcache</span><span class="o">/</span><span class="n">Python</span><span class="o">/</span><span class="mf">3.9.19</span><span class="o">/</span><span class="n">x64</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.9</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">arviz</span><span class="o">/</span><span class="n">plots</span><span class="o">/</span><span class="n">autocorrplot</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">7</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">from</span> <span class="nn">..rcparams</span> <span class="kn">import</span> <span class="n">rcParams</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="kn">from</span> <span class="nn">..utils</span> <span class="kn">import</span> <span class="n">_var_names</span>
+<span class="ne">----&gt; </span><span class="mi">7</span> <span class="kn">from</span> <span class="nn">.plot_utils</span> <span class="kn">import</span> <span class="n">default_grid</span><span class="p">,</span> <span class="n">filter_plotters_list</span><span class="p">,</span> <span class="n">get_plotting_function</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="k">def</span> <span class="nf">plot_autocorr</span><span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span>     <span class="n">data</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">12</span>     <span class="n">var_names</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">24</span>     <span class="n">show</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">25</span> <span class="p">):</span>
+<span class="g g-Whitespace">     </span><span class="mi">26</span><span class="w">     </span><span class="sa">r</span><span class="sd">&quot;&quot;&quot;Bar plot of the autocorrelation function (ACF) for a sequence of data.</span>
+<span class="g g-Whitespace">     </span><span class="mi">27</span><span class="sd"> </span>
+<span class="g g-Whitespace">     </span><span class="mi">28</span><span class="sd">     The ACF plots are helpful as a convergence diagnostic for posteriors from MCMC</span>
+<span class="sd">   (...)</span>
+<span class="g g-Whitespace">    </span><span class="mi">117</span><span class="sd">         &gt;&gt;&gt; az.plot_autocorr(data, var_names=[&#39;mu&#39;, &#39;tau&#39;], max_lag=200, combined=True)</span>
+<span class="g g-Whitespace">    </span><span class="mi">118</span><span class="sd">     &quot;&quot;&quot;</span>
+
+<span class="n">File</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">hostedtoolcache</span><span class="o">/</span><span class="n">Python</span><span class="o">/</span><span class="mf">3.9.19</span><span class="o">/</span><span class="n">x64</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.9</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">arviz</span><span class="o">/</span><span class="n">plots</span><span class="o">/</span><span class="n">plot_utils</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">15</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="kn">from</span> <span class="nn">scipy.interpolate</span> <span class="kn">import</span> <span class="n">CubicSpline</span>
+<span class="g g-Whitespace">     </span><span class="mi">14</span> <span class="kn">from</span> <span class="nn">..rcparams</span> <span class="kn">import</span> <span class="n">rcParams</span>
+<span class="ne">---&gt; </span><span class="mi">15</span> <span class="kn">from</span> <span class="nn">..stats.density_utils</span> <span class="kn">import</span> <span class="n">kde</span>
+<span class="g g-Whitespace">     </span><span class="mi">16</span> <span class="kn">from</span> <span class="nn">..stats</span> <span class="kn">import</span> <span class="n">hdi</span>
+<span class="g g-Whitespace">     </span><span class="mi">18</span> <span class="n">KwargSpec</span> <span class="o">=</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span>
+
+<span class="n">File</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">hostedtoolcache</span><span class="o">/</span><span class="n">Python</span><span class="o">/</span><span class="mf">3.9.19</span><span class="o">/</span><span class="n">x64</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.9</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">arviz</span><span class="o">/</span><span class="n">stats</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">3</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># pylint: disable=wildcard-import</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span><span class="w"> </span><span class="sd">&quot;&quot;&quot;Statistical tests and diagnostics for ArviZ.&quot;&quot;&quot;</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">.density_utils</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">from</span> <span class="nn">.diagnostics</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">from</span> <span class="nn">.stats</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">File</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">hostedtoolcache</span><span class="o">/</span><span class="n">Python</span><span class="o">/</span><span class="mf">3.9.19</span><span class="o">/</span><span class="n">x64</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.9</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">arviz</span><span class="o">/</span><span class="n">stats</span><span class="o">/</span><span class="n">density_utils</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">8</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="kn">from</span> <span class="nn">scipy.fftpack</span> <span class="kn">import</span> <span class="n">fft</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="kn">import</span> <span class="n">brentq</span>
+<span class="ne">----&gt; </span><span class="mi">8</span> <span class="kn">from</span> <span class="nn">scipy.signal</span> <span class="kn">import</span> <span class="n">convolve</span><span class="p">,</span> <span class="n">convolve2d</span><span class="p">,</span> <span class="n">gaussian</span>  <span class="c1"># pylint: disable=no-name-in-module</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="kn">from</span> <span class="nn">scipy.sparse</span> <span class="kn">import</span> <span class="n">coo_matrix</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="kn">from</span> <span class="nn">scipy.special</span> <span class="kn">import</span> <span class="n">ive</span>  <span class="c1"># pylint: disable=no-name-in-module</span>
+
+<span class="ne">ImportError</span>: cannot import name &#39;gaussian&#39; from &#39;scipy.signal&#39; (/opt/hostedtoolcache/Python/3.9.19/x64/lib/python3.9/site-packages/scipy/signal/__init__.py)
+</pre></div>
+</div>
 </div>
 </div>
 <p>In this example, we are going to fit a cummulative normal function to decision responses made during the Heart Rate Discrimination task. We will use the data from the <a class="reference external" href="https://www.biorxiv.org/content/10.1101/2021.02.18.431871v1">HRD method paper</a> <span id="id1">[<a class="reference internal" href="../../references.html#id4" title="Nicolas Legrand, Niia Nikolova, Camile Correa, Malthe Brændholt, Anna Stuckert, Nanna Kildahl, Melina Vejlø, Francesca Fardo, and Micah Allen. The heart rate discrimination task: a psychophysical method to estimate the accuracy and precision of interoceptive beliefs. Biological Psychology, 168:108239, 2022. URL: https://www.sciencedirect.com/science/article/pii/S0301051121002325, doi:https://doi.org/10.1016/j.biopsycho.2021.108239.">Legrand <em>et al.</em>, 2022</a>]</span> and analyse the responses from all participants and infer group-level hyperpriors.</p>
@@ -859,7 +921,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/56af5baab3d4f8cd33390caeac204724ef87187dd6fd6ef4e9c8ab860aae1504.svg" src="../../_images/56af5baab3d4f8cd33390caeac204724ef87187dd6fd6ef4e9c8ab860aae1504.svg" /></div>
+<img alt="../../_images/7c13f2684ac9fed977267a6ba6c8b66a086d0029889bc9377eddae87c0d545f5.svg" src="../../_images/7c13f2684ac9fed977267a6ba6c8b66a086d0029889bc9377eddae87c0d545f5.svg" /></div>
 </div>
 <p>Sampling.</p>
 <div class="cell docutils container">
@@ -871,15 +933,9 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Auto-assigning NUTS sampler...
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Initializing NUTS using jitter+adapt_diag...
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Multiprocess sampling (4 chains in 4 jobs)
-</pre></div>
-</div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>NUTS: [mu_alpha, sigma_alpha, mu_beta, sigma_beta, alpha, beta]
+Initializing NUTS using jitter+adapt_diag...
+Multiprocess sampling (4 chains in 4 jobs)
+NUTS: [mu_alpha, sigma_alpha, mu_beta, sigma_beta, alpha, beta]
 </pre></div>
 </div>
 <div class="output text_html">
@@ -901,132 +957,9 @@ document.write(`
 </div><div class="output text_html">
     <div>
       <progress value='8000' class='' max='8000' style='width:300px; height:20px; vertical-align: middle;'></progress>
-      100.00% [8000/8000 02:26&lt;00:00 Sampling 4 chains, 0 divergences]
+      100.00% [8000/8000 01:34&lt;00:00 Sampling 4 chains, 0 divergences]
     </div>
-    </div><div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Sampling 4 chains for 1_000 tune and 1_000 draw iterations (4_000 + 4_000 draws total) took 147 seconds.
-</pre></div>
-</div>
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">AttributeError</span><span class="g g-Whitespace">                            </span>Traceback (most recent call last)
-<span class="nn">File /opt/hostedtoolcache/Python/3.9.19/x64/lib/python3.9/site-packages/arviz/data/base.py:342,</span> in <span class="ni">make_attrs</span><span class="nt">(attrs, library)</span>
-<span class="g g-Whitespace">    </span><span class="mi">341</span> <span class="k">try</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">342</span>     <span class="n">version</span> <span class="o">=</span> <span class="n">importlib</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">version</span><span class="p">(</span><span class="n">library_name</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">343</span>     <span class="n">default_attrs</span><span class="p">[</span><span class="s2">&quot;inference_library_version&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">version</span>
-
-<span class="ne">AttributeError</span>: module &#39;importlib&#39; has no attribute &#39;metadata&#39;
-
-<span class="n">During</span> <span class="n">handling</span> <span class="n">of</span> <span class="n">the</span> <span class="n">above</span> <span class="n">exception</span><span class="p">,</span> <span class="n">another</span> <span class="n">exception</span> <span class="n">occurred</span><span class="p">:</span>
-
-<span class="ne">AttributeError</span><span class="g g-Whitespace">                            </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">9</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="k">with</span> <span class="n">group_psychophysics</span><span class="p">:</span>
-<span class="ne">----&gt; </span><span class="mi">2</span>     <span class="n">idata</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">chains</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">cores</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.9.19/x64/lib/python3.9/site-packages/pymc/sampling/mcmc.py:826,</span> in <span class="ni">sample</span><span class="nt">(draws, tune, chains, cores, random_seed, progressbar, step, var_names, nuts_sampler, initvals, init, jitter_max_retries, n_init, trace, discard_tuned_samples, compute_convergence_checks, keep_warning_stat, return_inferencedata, idata_kwargs, nuts_sampler_kwargs, callback, mp_ctx, model, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">822</span> <span class="n">t_sampling</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">t_start</span>
-<span class="g g-Whitespace">    </span><span class="mi">824</span> <span class="c1"># Packaging, validating and returning the result was extracted</span>
-<span class="g g-Whitespace">    </span><span class="mi">825</span> <span class="c1"># into a function to make it easier to test and refactor.</span>
-<span class="ne">--&gt; </span><span class="mi">826</span> <span class="k">return</span> <span class="n">_sample_return</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">827</span>     <span class="n">run</span><span class="o">=</span><span class="n">run</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">828</span>     <span class="n">traces</span><span class="o">=</span><span class="n">traces</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">829</span>     <span class="n">tune</span><span class="o">=</span><span class="n">tune</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">830</span>     <span class="n">t_sampling</span><span class="o">=</span><span class="n">t_sampling</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">831</span>     <span class="n">discard_tuned_samples</span><span class="o">=</span><span class="n">discard_tuned_samples</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">832</span>     <span class="n">compute_convergence_checks</span><span class="o">=</span><span class="n">compute_convergence_checks</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">833</span>     <span class="n">return_inferencedata</span><span class="o">=</span><span class="n">return_inferencedata</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">834</span>     <span class="n">keep_warning_stat</span><span class="o">=</span><span class="n">keep_warning_stat</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">835</span>     <span class="n">idata_kwargs</span><span class="o">=</span><span class="n">idata_kwargs</span> <span class="ow">or</span> <span class="p">{},</span>
-<span class="g g-Whitespace">    </span><span class="mi">836</span>     <span class="n">model</span><span class="o">=</span><span class="n">model</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">837</span> <span class="p">)</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.9.19/x64/lib/python3.9/site-packages/pymc/sampling/mcmc.py:894,</span> in <span class="ni">_sample_return</span><span class="nt">(run, traces, tune, t_sampling, discard_tuned_samples, compute_convergence_checks, return_inferencedata, keep_warning_stat, idata_kwargs, model)</span>
-<span class="g g-Whitespace">    </span><span class="mi">892</span> <span class="n">ikwargs</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="n">model</span><span class="p">,</span> <span class="n">save_warmup</span><span class="o">=</span><span class="ow">not</span> <span class="n">discard_tuned_samples</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">893</span> <span class="n">ikwargs</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">idata_kwargs</span><span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">894</span> <span class="n">idata</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">to_inference_data</span><span class="p">(</span><span class="n">mtrace</span><span class="p">,</span> <span class="o">**</span><span class="n">ikwargs</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">896</span> <span class="k">if</span> <span class="n">compute_convergence_checks</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">897</span>     <span class="n">warns</span> <span class="o">=</span> <span class="n">run_convergence_checks</span><span class="p">(</span><span class="n">idata</span><span class="p">,</span> <span class="n">model</span><span class="p">)</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.9.19/x64/lib/python3.9/site-packages/pymc/backends/arviz.py:525,</span> in <span class="ni">to_inference_data</span><span class="nt">(trace, prior, posterior_predictive, log_likelihood, log_prior, coords, dims, sample_dims, model, save_warmup, include_transformed)</span>
-<span class="g g-Whitespace">    </span><span class="mi">522</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">trace</span><span class="p">,</span> <span class="n">InferenceData</span><span class="p">):</span>
-<span class="g g-Whitespace">    </span><span class="mi">523</span>     <span class="k">return</span> <span class="n">trace</span>
-<span class="ne">--&gt; </span><span class="mi">525</span> <span class="k">return</span> <span class="n">InferenceDataConverter</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">526</span>     <span class="n">trace</span><span class="o">=</span><span class="n">trace</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">527</span>     <span class="n">prior</span><span class="o">=</span><span class="n">prior</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">528</span>     <span class="n">posterior_predictive</span><span class="o">=</span><span class="n">posterior_predictive</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">529</span>     <span class="n">log_likelihood</span><span class="o">=</span><span class="n">log_likelihood</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">530</span>     <span class="n">log_prior</span><span class="o">=</span><span class="n">log_prior</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">531</span>     <span class="n">coords</span><span class="o">=</span><span class="n">coords</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">532</span>     <span class="n">dims</span><span class="o">=</span><span class="n">dims</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">533</span>     <span class="n">sample_dims</span><span class="o">=</span><span class="n">sample_dims</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">534</span>     <span class="n">model</span><span class="o">=</span><span class="n">model</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">535</span>     <span class="n">save_warmup</span><span class="o">=</span><span class="n">save_warmup</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">536</span>     <span class="n">include_transformed</span><span class="o">=</span><span class="n">include_transformed</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">537</span> <span class="p">)</span><span class="o">.</span><span class="n">to_inference_data</span><span class="p">()</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.9.19/x64/lib/python3.9/site-packages/pymc/backends/arviz.py:429,</span> in <span class="ni">InferenceDataConverter.to_inference_data</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">421</span> <span class="k">def</span> <span class="nf">to_inference_data</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="g g-Whitespace">    </span><span class="mi">422</span><span class="w">     </span><span class="sd">&quot;&quot;&quot;Convert all available data to an InferenceData object.</span>
-<span class="g g-Whitespace">    </span><span class="mi">423</span><span class="sd"> </span>
-<span class="g g-Whitespace">    </span><span class="mi">424</span><span class="sd">     Note that if groups can not be created (e.g., there is no `trace`, so</span>
-<span class="g g-Whitespace">    </span><span class="mi">425</span><span class="sd">     the `posterior` and `sample_stats` can not be extracted), then the InferenceData</span>
-<span class="g g-Whitespace">    </span><span class="mi">426</span><span class="sd">     will not have those groups.</span>
-<span class="g g-Whitespace">    </span><span class="mi">427</span><span class="sd">     &quot;&quot;&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">428</span>     <span class="n">id_dict</span> <span class="o">=</span> <span class="p">{</span>
-<span class="ne">--&gt; </span><span class="mi">429</span>         <span class="s2">&quot;posterior&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">posterior_to_xarray</span><span class="p">(),</span>
-<span class="g g-Whitespace">    </span><span class="mi">430</span>         <span class="s2">&quot;sample_stats&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">sample_stats_to_xarray</span><span class="p">(),</span>
-<span class="g g-Whitespace">    </span><span class="mi">431</span>         <span class="s2">&quot;posterior_predictive&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">posterior_predictive_to_xarray</span><span class="p">(),</span>
-<span class="g g-Whitespace">    </span><span class="mi">432</span>         <span class="s2">&quot;predictions&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">predictions_to_xarray</span><span class="p">(),</span>
-<span class="g g-Whitespace">    </span><span class="mi">433</span>         <span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">priors_to_xarray</span><span class="p">(),</span>
-<span class="g g-Whitespace">    </span><span class="mi">434</span>         <span class="s2">&quot;observed_data&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">observed_data_to_xarray</span><span class="p">(),</span>
-<span class="g g-Whitespace">    </span><span class="mi">435</span>     <span class="p">}</span>
-<span class="g g-Whitespace">    </span><span class="mi">436</span>     <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">predictions</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">437</span>         <span class="n">id_dict</span><span class="p">[</span><span class="s2">&quot;predictions_constant_data&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">constant_data_to_xarray</span><span class="p">()</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.9.19/x64/lib/python3.9/site-packages/arviz/data/base.py:65,</span> in <span class="ni">requires.__call__.&lt;locals&gt;.wrapped</span><span class="nt">(cls)</span>
-<span class="g g-Whitespace">     </span><span class="mi">63</span>     <span class="k">if</span> <span class="nb">all</span><span class="p">((</span><span class="nb">getattr</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">prop_i</span><span class="p">)</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">for</span> <span class="n">prop_i</span> <span class="ow">in</span> <span class="n">prop</span><span class="p">)):</span>
-<span class="g g-Whitespace">     </span><span class="mi">64</span>         <span class="k">return</span> <span class="kc">None</span>
-<span class="ne">---&gt; </span><span class="mi">65</span> <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="bp">cls</span><span class="p">)</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.9.19/x64/lib/python3.9/site-packages/pymc/backends/arviz.py:279,</span> in <span class="ni">InferenceDataConverter.posterior_to_xarray</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">274</span>     <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">posterior_trace</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">275</span>         <span class="n">data</span><span class="p">[</span><span class="n">var_name</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">276</span>             <span class="bp">self</span><span class="o">.</span><span class="n">posterior_trace</span><span class="o">.</span><span class="n">get_values</span><span class="p">(</span><span class="n">var_name</span><span class="p">,</span> <span class="n">combine</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">squeeze</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">277</span>         <span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">278</span> <span class="k">return</span> <span class="p">(</span>
-<span class="ne">--&gt; </span><span class="mi">279</span>     <span class="n">dict_to_dataset</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">280</span>         <span class="n">data</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">281</span>         <span class="n">library</span><span class="o">=</span><span class="n">pymc</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">282</span>         <span class="n">coords</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">coords</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">283</span>         <span class="n">dims</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">dims</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">284</span>         <span class="n">attrs</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">attrs</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">285</span>     <span class="p">),</span>
-<span class="g g-Whitespace">    </span><span class="mi">286</span>     <span class="n">dict_to_dataset</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">287</span>         <span class="n">data_warmup</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">288</span>         <span class="n">library</span><span class="o">=</span><span class="n">pymc</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">289</span>         <span class="n">coords</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">coords</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">290</span>         <span class="n">dims</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">dims</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">291</span>         <span class="n">attrs</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">attrs</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">292</span>     <span class="p">),</span>
-<span class="g g-Whitespace">    </span><span class="mi">293</span> <span class="p">)</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.9.19/x64/lib/python3.9/site-packages/arviz/data/base.py:318,</span> in <span class="ni">dict_to_dataset</span><span class="nt">(data, attrs, library, coords, dims, default_dims, index_origin, skip_event_dims)</span>
-<span class="g g-Whitespace">    </span><span class="mi">304</span>     <span class="n">dims</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="g g-Whitespace">    </span><span class="mi">306</span> <span class="n">data_vars</span> <span class="o">=</span> <span class="p">{</span>
-<span class="g g-Whitespace">    </span><span class="mi">307</span>     <span class="n">key</span><span class="p">:</span> <span class="n">numpy_to_data_array</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">308</span>         <span class="n">values</span><span class="p">,</span>
-   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
-<span class="nn">    316     for key, values</span> in <span class="ni">data.items</span><span class="nt">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">317</span> <span class="p">}</span>
-<span class="ne">--&gt; </span><span class="mi">318</span> <span class="k">return</span> <span class="n">xr</span><span class="o">.</span><span class="n">Dataset</span><span class="p">(</span><span class="n">data_vars</span><span class="o">=</span><span class="n">data_vars</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="n">make_attrs</span><span class="p">(</span><span class="n">attrs</span><span class="o">=</span><span class="n">attrs</span><span class="p">,</span> <span class="n">library</span><span class="o">=</span><span class="n">library</span><span class="p">))</span>
-
-<span class="nn">File /opt/hostedtoolcache/Python/3.9.19/x64/lib/python3.9/site-packages/arviz/data/base.py:344,</span> in <span class="ni">make_attrs</span><span class="nt">(attrs, library)</span>
-<span class="g g-Whitespace">    </span><span class="mi">342</span>     <span class="n">version</span> <span class="o">=</span> <span class="n">importlib</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">version</span><span class="p">(</span><span class="n">library_name</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">343</span>     <span class="n">default_attrs</span><span class="p">[</span><span class="s2">&quot;inference_library_version&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">version</span>
-<span class="ne">--&gt; </span><span class="mi">344</span> <span class="k">except</span> <span class="n">importlib</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">PackageNotFoundError</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">345</span>     <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">library</span><span class="p">,</span> <span class="s2">&quot;__version__&quot;</span><span class="p">):</span>
-<span class="g g-Whitespace">    </span><span class="mi">346</span>         <span class="n">version</span> <span class="o">=</span> <span class="n">library</span><span class="o">.</span><span class="n">__version__</span>
-
-<span class="ne">AttributeError</span>: module &#39;importlib&#39; has no attribute &#39;metadata&#39;
+    </div><div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Sampling 4 chains for 1_000 tune and 1_000 draw iterations (4_000 + 4_000 draws total) took 95 seconds.
 </pre></div>
 </div>
 </div>
