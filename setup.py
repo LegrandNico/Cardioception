@@ -31,7 +31,7 @@ DESCRIPTION = "Cardioception Python Toolbox"
 LONG_DESCRIPTION = """Measuring cardiac interoception with Psychopy.
 """
 
-DISTNAME = "cardioception-toolbox"
+DISTNAME = "cardioception"
 MAINTAINER = "Nicolas Legrand"
 MAINTAINER_EMAIL = "nicolas.legrand@cas.au.dk"
 
@@ -47,7 +47,7 @@ if __name__ == "__main__":
         long_description=LONG_DESCRIPTION,
         license=read("LICENSE"),
         version=get_version("cardioception/__init__.py"),
-        url="https://github.com/LegrandNico/cardioception-toolbox",
+        url="https://github.com/LegrandNico/cardioception",
         install_requires=get_requirements(),
         include_package_data=True,
         packages=find_packages(),
