@@ -13,7 +13,7 @@ class TestReports(TestCase):
         """Test the preprocessing function"""
         # load the main result data frame
         results = pd.read_csv(
-            "https://raw.githubusercontent.com/LegrandNico/cardioception-toolbox/master/docs/source/examples/templates/data/HRD/HRD_final.txt"
+            "https://raw.githubusercontent.com/LegrandNico/cardioception/master/docs/source/examples/templates/data/HRD/HRD_final.txt"
             )
         preprocessing(results=results)
 

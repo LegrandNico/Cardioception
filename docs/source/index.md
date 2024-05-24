@@ -1,10 +1,10 @@
 # Cardioception toolbox
 
-[![GitHub license](https://img.shields.io/github/license/LegrandNico/cardioception-toolbox)](https://github.com/LegrandNico/cardioception-toolbox/blob/master/LICENSE) [![GitHub release](https://img.shields.io/github/release/LegrandNico/cardioception-toolbox)](https://github.com/LegrandNico/cardioception-toolbox/releases/) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit) [![pip](https://badge.fury.io/py/cardioception-toolbox.svg)](https://badge.fury.io/py/cardioception-toolbox) [![black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) [![mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/) [![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
+[![GitHub license](https://img.shields.io/github/license/LegrandNico/cardioception)](https://github.com/LegrandNico/cardioception/blob/master/LICENSE) [![GitHub release](https://img.shields.io/github/release/LegrandNico/cardioception)](https://github.com/LegrandNico/cardioception/releases/) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit) [![pip](https://badge.fury.io/py/cardioception.svg)](https://badge.fury.io/py/cardioception) [![black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) [![mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/) [![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
 
 ---
 
-<img src="https://raw.githubusercontent.com/LegrandNico/cardioception-toolbox/master/docs/source/images/logo.png" align="left" alt="cardioception" height="230" HSPACE=30>
+<img src="https://raw.githubusercontent.com/LegrandNico/cardioception/master/docs/source/images/logo.png" align="left" alt="cardioception" height="230" HSPACE=30>
 
 ```{important}
 The Cardioception Python Toolbox is a fork of the [original cardioception repository](https://github.com/embodied-computation-group/Cardioception) that I ([Nicolas Legrand](https://github.com/LegrandNico/)) created while working in [the ECG lab](https://www.the-ecg.org/) from 2019 to 2022. My previous lab has taken full control of the repository since then, meaning that I am unfortunately unable to maintain it as it should be. This repository allows me to pursue the maintenance of the package, aiming to provide reliable and robust tasks to measure cardiac interoception, together with computational modelling tools to analyse data gathered with these tasks.
@@ -26,7 +26,7 @@ These tasks can run using minimal experimental settings: a computer and a record
 
 If you have questions regarding the tasks, want to report a bug or discuss data analysis, please ask on the public discussion page in this repository.
 
-If you want to report a bug, you can open an issue on the [GitHub page](https://github.com/LegrandNico/cardioception-toolbox).
+If you want to report a bug, you can open an issue on the [GitHub page](https://github.com/LegrandNico/cardioception).
 
 ## Development
 

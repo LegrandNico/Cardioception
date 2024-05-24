@@ -1,10 +1,10 @@
-[![GitHub license](https://img.shields.io/github/license/LegrandNico/cardioception-toolbox)](https://github.com/LegrandNico/cardioception-toolbox/blob/master/LICENSE) [![GitHub release](https://img.shields.io/github/release/LegrandNico/cardioception-toolbox)](https://github.com/LegrandNico/cardioception-toolbox/releases/) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit) [![pip](https://badge.fury.io/py/cardioception-toolbox.svg)](https://badge.fury.io/py/cardioception-toolbox) [![black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) [![mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/) [![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
+[![GitHub license](https://img.shields.io/github/license/LegrandNico/cardioception)](https://github.com/LegrandNico/cardioception/blob/master/LICENSE) [![GitHub release](https://img.shields.io/github/release/LegrandNico/cardioception)](https://github.com/LegrandNico/cardioception/releases/) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit) [![pip](https://badge.fury.io/py/cardioception.svg)](https://badge.fury.io/py/cardioception) [![black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) [![mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/) [![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
 
 ***
 
 # Cardioception toolbox
 
-<img src="https://raw.githubusercontent.com/LegrandNico/cardioception-toolbox/master/docs/source/images/logo.png" align="left" alt="cardioception" height="230" HSPACE=30>
+<img src="https://raw.githubusercontent.com/LegrandNico/cardioception/master/docs/source/images/logo.png" align="left" alt="cardioception" height="230" HSPACE=30>
 
 The Cardioception Python Toolbox is a fork of the [original cardioception repository](https://github.com/embodied-computation-group/Cardioception) that I ([Nicolas Legrand](https://github.com/LegrandNico/)) created while working in [the ECG lab](https://www.the-ecg.org/) from 2019 to 2022. My previous lab has taken full control of the repository since then, meaning that I am unfortunately unable to maintain it as it should be. This repository allows me to pursue the maintenance of the package, aiming to provide reliable and robust tasks to measure cardiac interoception, together with computational modelling tools to analyse data gathered with these tasks.
 
@@ -36,7 +36,7 @@ If you have questions regarding the tasks, want to report a bug or discuss data 
 ## Using the Python Package Index
 
 * The most recent version can be installed uing:
-    `pip install cardioception-toolbox`
+    `pip install cardioception`
 * The current development branch can be installed using
   `pip install git+https://github.com/LegrandNico/Cardioception.git`
 
@@ -118,7 +118,7 @@ parameters['win'].close()
 
 This minimal example will run the Heart Rate Discrimination task with a total of 10 trials using a Psi staircase.
 
-We provide standard scripts in the [wrappers](https://github.com/LegrandNico/cardioception-toolbox/tree/master/wrappers) folder that can be adapted to your needs. We recommend copying this script in your local task folder if you want to parametrize it to fit your needs. The tasks can then easily be executed by running the corresponding wrapper file (e.g. in a terminal).
+We provide standard scripts in the [wrappers](https://github.com/LegrandNico/cardioception/tree/master/wrappers) folder that can be adapted to your needs. We recommend copying this script in your local task folder if you want to parametrize it to fit your needs. The tasks can then easily be executed by running the corresponding wrapper file (e.g. in a terminal).
 
 ## Creating a shortcut (Windows)
 
@@ -136,7 +136,7 @@ pause
 
 ## The Heartbeat Counting task
 
-<img src= "https://raw.githubusercontent.com/LegrandNico/cardioception-toolbox/master/docs/source/images/HeartBeatCounting.png">
+<img src= "https://raw.githubusercontent.com/LegrandNico/cardioception/master/docs/source/images/HeartBeatCounting.png">
 
 This module is an implementation of the classic "heartbeat counting task" (HCT)<sup>1,2</sup> in which participants attend to their heartbeats in intervals of various lengths. Afterwards, the participant indicates the number of counted heartbeats, and a score is computed to represent their accuracy. In the original version<sup>1</sup>, the task started with a resting period of 60 seconds and consisted of three estimation sessions (25, 35, and 45 seconds) interleaved with resting periods of 30 seconds in the following order:
 
@@ -144,7 +144,7 @@ By default, this task implements the version used in recent publications <sup>4<
 
 ## The Heart Rate Discrimination task
 
-<img src= "https://raw.githubusercontent.com/LegrandNico/cardioception-toolbox/master/docs/source/images/HeartRateDiscrimination.png">
+<img src= "https://raw.githubusercontent.com/LegrandNico/cardioception/master/docs/source/images/HeartRateDiscrimination.png">
 
 This task implements an adaptive psychophysical procedure for estimating participants' ability to discriminate their heart rate. In each trial, participants attend to their heartbeat sensations for five seconds and estimate their average heart rate. Immediately following this period, a cardiac feedback stimulus of 5 tones is played at a particular BPM frequency. The frequency is determined as their estimated average BPM plus or minus an intensity value that is updated by an adaptive staircase procedure (up/down or psi).
 
@@ -169,8 +169,8 @@ You can also analyze the results in [Google Colab](https://colab.research.google
 
 | Notebook | Colab | nbViewer |
 | --- | ---| --- |
-| Heartbeat Counting task report | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LegrandNico/cardioception-toolbox/blob/master/cardioception/notebooks/HeartBeatCounting.ipynb) | 
-| Heart Rate Discrimination task report | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LegrandNico/cardioception-toolbox/blob/master/cardioception/notebooks/HeartRateDiscrimination.ipynb) | 
+| Heartbeat Counting task report | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LegrandNico/cardioception/blob/master/cardioception/notebooks/HeartBeatCounting.ipynb) | 
+| Heart Rate Discrimination task report | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LegrandNico/cardioception/blob/master/cardioception/notebooks/HeartRateDiscrimination.ipynb) | 
 
 ## Bayesian modeling
 
@@ -178,8 +178,8 @@ More advanced subject and group-level Bayesian modelling approaches are describe
 
 | Notebook | Colab | nbViewer |
 | --- | ---| --- |
-| Fitting the psychometric function (single subject) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LegrandNico/cardioception-toolbox/blob/master/docs/source/examples/psychophysics/1-psychophysics_subject_level.ipynb) | 
-| Fitting the psychometric function (group level) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LegrandNico/cardioception-toolbox/blob/master/docs/source/examples/psychophysics/2-psychophysics_group_level.ipynb) | 
+| Fitting the psychometric function (single subject) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LegrandNico/cardioception/blob/master/docs/source/examples/psychophysics/1-psychophysics_subject_level.ipynb) | 
+| Fitting the psychometric function (group level) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LegrandNico/cardioception/blob/master/docs/source/examples/psychophysics/2-psychophysics_group_level.ipynb) | 
 
 # References
 
@@ -193,7 +193,7 @@ More advanced subject and group-level Bayesian modelling approaches are describe
 
 This package is a fork of the original [Cardioception](https://github.com/embodied-computation-group/Cardioception) repository and is maintained by [Nicolas Legrand](https://github.com/LegrandNico).
 
-<img src = "https://raw.githubusercontent.com/LegrandNico/cardioception-toolbox/master/docs/source/images/AU.png" height ="100">
+<img src = "https://raw.githubusercontent.com/LegrandNico/cardioception/master/docs/source/images/AU.png" height ="100">
 
 # Credit
 
